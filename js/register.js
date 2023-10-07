@@ -22,7 +22,7 @@ function postDataRegister(event) {
     if (data) {
         alert('Register Berhasil');
         form.reset();
-        window.location.href = 'index.html';
+        window.location.href ='login.html';
     }
 
     // Kirim data sebagai JSON
