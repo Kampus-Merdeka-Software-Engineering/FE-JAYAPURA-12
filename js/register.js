@@ -18,32 +18,32 @@ function postDataRegister(event) {
         c_password : password,
     };
 
-    console.log(data);
-    if (data) {
-        alert('Register Berhasil');
-        form.reset();
-        window.location.href ='login.html';
-    }
+    // console.log(data);
+    // if (data) {
+    //     alert('Register Berhasil');
+    //     form.reset();
+    //     window.location.href ='login.html';
+    // }
 
     // Kirim data sebagai JSON
-    // fetch('', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    //     body: JSON.stringify(data),
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //     if (data.success) {
-    //         alert('Login Berhasil');
-    //         form.reset();
-    //         window.location.href = 'Homepage.html';
-    //     } else {
-    //         alert('Maaf, terjadi kesalahan. Silahkan coba lagi.');
-    //     }
-    // })
-    // .catch(error => console.error('Error sending contact data:', error));
+    fetch('http://https://be-jayapura-12.vercel.app/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('regist Berhasil');
+            form.reset();
+            window.location.href ='login.html';
+        } else {
+            alert('Maaf, terjadi kesalahan. Silahkan coba lagi.');
+        }
+    })
+    .catch(error => console.error('Error sending contact data:', error));
 }
 
 
