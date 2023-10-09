@@ -26,7 +26,7 @@ function postDataRegister(event) {
     // }
 
     // Kirim data sebagai JSON
-    fetch('http://https://be-jayapura-12.vercel.app/', {
+    fetch('https://be-jayapura-12.vercel.app/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
