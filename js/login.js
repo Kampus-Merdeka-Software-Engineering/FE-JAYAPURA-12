@@ -12,12 +12,12 @@ function postContactFormData(event) {
         password: password,
     };
 
-    // console.log;
-    // if (data) {
-    //     alert('Login berhasil');
-    //     form.reset();
-    //     window.location.href ='dashboard.html';
-    // }
+    console.log;
+    if (data) {
+        alert('Login berhasil');
+        form.reset();
+        window.location.href ='dashboard.html';
+    }
 
     // Kirim data sebagai JSON
     // const apiurl = 'http://localhost:3001/login';
