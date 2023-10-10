@@ -19,7 +19,7 @@ function postContactFormData(event) {
         window.location.href ='dashboard.html';
     }
 
-    // Kirim data sebagai JSON
+    // // Kirim data sebagai JSON
     // const apiurl = 'http://localhost:3001/login';
     // fetch(apiurl, {
     //     method: 'POST',
@@ -33,7 +33,7 @@ function postContactFormData(event) {
     //     if (data.success) {
     //         alert('Login Berhasil');
     //         form.reset();
-    //         window.location.href = 'Homepage.html';
+    //         window.location.href ='dashboard.html';
     //     } else {
     //         alert('Maaf, terjadi kesalahan. Silahkan coba lagi.');
     //     }

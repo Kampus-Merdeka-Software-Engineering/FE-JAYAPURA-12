@@ -22,11 +22,11 @@ function postDataRegister(event) {
     if (data) {
         alert('Register Berhasil');
         form.reset();
-        window.location.href = 'Login.html';
+        window.location.href ='login.html';
     }
 
-    // Kirim data sebagai JSON
-    // fetch('', {
+    // // Kirim data sebagai JSON
+    // fetch('http://localhost:3001/register', {
     //     method: 'POST',
     //     headers: {
     //         'Content-Type': 'application/json',
@@ -36,9 +36,9 @@ function postDataRegister(event) {
     // .then(response => response.json())
     // .then(data => {
     //     if (data.success) {
-    //         alert('Login Berhasil');
+    //         alert('regist Berhasil');
     //         form.reset();
-    //         window.location.href = 'Homepage.html';
+    //         window.location.href ='login.html';
     //     } else {
     //         alert('Maaf, terjadi kesalahan. Silahkan coba lagi.');
     //     }
